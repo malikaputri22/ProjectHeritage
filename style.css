@@ -1,0 +1,336 @@
+:root {
+    --primary: #e7e7e7;
+    --bg: #ffffff;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    min-height: 2000px;
+    background-color: var(--primary);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(img/adat.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .text {
+    font-family: 'Courier New', monospace;
+    color: #120101;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero .dynamic-text {
+    margin: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-text li {
+    list-style: none;
+    color: black;
+    font-size: 35px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-text li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.dynamic-text li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 78px;
+    width: 100%;
+    background: #f8fdf8;
+    border-left: 2px solid #ffffff;
+    animation: typing 3s steps(14) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+/* navbar */
+.mynavbar {
+    background-color: rgba(255, g255, 255, 0.3) !important;
+    backdrop-filter: blur(1.5px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+/* about */
+.about {
+    min-height: 100vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: var(--primary);
+}
+
+/* service */
+.service {
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    background-color: var(--bg);
+
+}
+
+.service h4 {
+    font-size: 2rem;
+    padding-bottom: 4%;
+}
+
+#colom1, #colom2, #colom3, #colom4 {
+    margin: 16px;
+}
+
+.text-container {
+    border: 2px solid #44372f;
+    /* Warna border untuk Prewedding Photography */
+    background-color: #f0e4de;
+    /* Warna latar belakang untuk Prewedding Photography */
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.service h5 {
+    margin-bottom: 24px;
+}
+
+.service h5, .service p, .service h4, .service a {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.service ul {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+.more-info {
+    text-align: center;
+    margin-top: 32px;
+    /* Sesuaikan jarak dari konten sebelumnya */
+}
+
+.more-info a {
+    background-color: #44372f;
+    /* Warna latar belakang link */
+    color: #f0e4de;
+    /* Warna teks link */
+    padding: 16px 24px;
+    /* Sesuaikan ukuran padding */
+    border-radius: 8px;
+    /* Tambahkan border radius */
+    text-decoration: none;
+}
+
+.more-info a:hover {
+    background-color: #f0e4de;
+    /* Warna latar belakang saat hover */
+    color: #44372f;
+}
+
+/* testi */
+.testi {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: var(--primary);
+}
+
+.carousel-item img {
+    opacity: 0.8;
+    /* Atur opacity gambar */
+}
+
+/* partner */
+.partner {
+    padding: 2%;
+    padding-bottom: 30%;
+    background-color: var(--bg);
+}
+
+.partner h3 {
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+/* get */
+.form {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/* footer */
+.footer {
+    padding-bottom: 2%;
+}
+
+.footer h2 {
+    padding-top: 2%;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container.about img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Mengatur gambar agar sesuai dengan container dan menjaga aspek rasio */
+    display: block;
+    margin: 20px 0;
+    /* Menambahkan margin antara gambar dan konten */
+}
+
+h1 {
+    text-align: center;
+    color: rgb(8, 61, 8);
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.service p {
+    text-align: left;
+}
+
+.partner p {
+    text-align: left;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #FF5733;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #44372f;
+    color: #f0e4de;
+}
+
+/*button*/
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #f0e4de;
+    background-color: #44372f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f0e4de;
+    color: #44372f;
+}
+
+/* CSS untuk alert */
+.alert {
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+/* Warna latar belakang dan teks untuk alert success */
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+/* Warna latar belakang dan teks untuk alert error */
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Warna latar belakang dan teks untuk alert info */
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+/* Warna latar belakang dan teks untuk alert warning */
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+/* Style untuk tombol penutup pada alert */
+.alert-dismissible {
+    padding-right: 4rem;
+}
+
+.alert-dismissible .close {
+    position: relative;
+    top: -0.5rem;
+    right: -1rem;
+    padding: 1rem;
+}
